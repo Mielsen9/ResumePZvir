@@ -16,7 +16,7 @@
 	}
 }
 // Adaptiv-value
-@mixin adaptiv-value($property, $startSize, $minSize, $type: 1) {
+@mixin adaptiv-value($property, $startSize, $minSize, $type: 2) {
   $addSize: $startSize - $minSize;
 
   @if $type==1 {
@@ -55,5 +55,51 @@
   }
   @media (min-width: 767px) {
     font-size: clamp(#{$mobSize + px}, $adaptmin, #{$pcSize + px});
+  }
+}
+
+//Медіа запит
+@mixin mq($width, $type: max) {
+
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @if $type ==max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// Іконка трикутника
+@mixin triangle($width, $direction, $color) {
+  width: 0;
+  height: 0;
+
+  @if $direction ==up {
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-bottom: $width solid $color;
+  }
+
+  @if $direction ==down {
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+  }
+
+  @if $direction ==left {
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-right: $width solid $color;
+  }
+
+  @if $direction ==right {
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-left: $width solid $color;
   }
 }

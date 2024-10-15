@@ -1,9 +1,6 @@
 :root {
 	--container-width: 430px;
 	--container-padding: 5px;
-	@include mobile {
-		--container-width: 370px;
-	}
 
 	--font-main: Roboto, sans-serif;
 	--font-accent: sans-serif;
@@ -15,7 +12,6 @@
 	--accent: #ac182c;
 	--link-color: #000;
 
-	// --main-color: #788d64;
 	--main-color: rgb(39, 39, 39);
 	--sidebar-color: silver;
 
@@ -24,6 +20,10 @@
 	--tablet-size: 959px;
 	--mobile-size: 599px;
 }
+// Maket
+$maxWidth: 1920;
+$maxWidthContainer: 440;  
+$minWidth: 390;
 
 .dark {
     --page-bg: #252526;

@@ -1,0 +1,16 @@
+// to %
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result; 
+}
+
+// REM
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result; 
+}
+
+// wiaport
+@function vw($px-value, $base-width: $maxWidthContainer) {
+  @return ($px-value / $base-width) * 100vw;
+}
