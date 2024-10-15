@@ -1,6 +1,9 @@
 :root {
 	--container-width: 430px;
 	--container-padding: 5px;
+	@include mobile {
+		--container-width: 380px;
+	}
 
 	--font-main: Roboto, sans-serif;
 	--font-accent: sans-serif;
