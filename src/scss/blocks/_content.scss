@@ -1,0 +1,79 @@
+.content {
+  padding: 0 20px;
+  width: 290px;
+	border-right: 1px solid var(--main-color);
+}
+.profile, .work-experience, .education {
+	border-left: 1px solid #000;
+	padding-left: 20px;
+	position: relative;
+	&::before {
+		content: "";
+		
+		position: absolute;
+		left: -7px;
+		top: 0px;
+		width: 14px;
+		height: 14px;
+		
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: #fff;
+		
+	}
+}
+.profile {
+	&::before {
+		background-image: url('../../img/free-icon-profile-9344418.png');
+	}
+	&__title {
+		margin-top: 2px;
+		padding-bottom: 2px;
+	}
+}
+.data {
+	font-style: italic;
+}
+
+.work-experience {
+	&::before {
+		background-image: url('../../img/free-icon-briefcase-6876037.png');
+	}
+		&__data {
+			margin-bottom: 3px;
+		}
+
+		&__item {
+			list-style-type: disc;
+      padding-top: 3px;
+      margin-left: 10px;
+		}
+
+		&__title-3 {
+			font-size: 8px;
+			font-weight: bold;
+			padding-top: 5px;
+			padding-bottom: 2px;
+		}
+
+		&__progect-item {
+			list-style-type: disc;
+      padding-top: 3px;
+      margin-left: 10px;
+		}
+
+		&__progect-link {
+			font-size: 7px;
+  		font-weight: 600;
+		}
+}
+
+.education {
+	&::before {
+		background-image: url('../../img/free-icon-graduation-cap-5096169.png');
+	}
+
+		&__data {
+			margin-top: 3px;
+		}
+}

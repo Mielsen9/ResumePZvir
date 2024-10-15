@@ -1,0 +1,47 @@
+.sidebar {
+
+  background-color: var(--sidebar-color);
+  padding-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+  width: 130px;
+  border-left: 1px solid var(--main-color);
+}
+
+.contact {
+
+		&__item {
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+		}
+
+		&__item-img {
+      width: 10px;
+      height: 10px;
+		}
+}
+
+.skills {
+
+		&__item {
+      list-style-type: disc;
+      padding-top: 6px;
+      margin-left: 10px;
+		}
+}
+.languages {
+
+  padding-bottom: 20px;
+		&__list {
+      padding-top: 6px;
+		}
+
+		&__item {
+      list-style-type: disc;
+      padding-top: 3px;
+      margin-left: 10px;
+		}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Zvir Petro CV</title>
+	<link rel="stylesheet" href="./css/style.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+			@@include('blocks/header.html')
+		<!-- Header -->
+	
+		<!-- Main -->
+		<main class="main">
+			<div class="main__conteiner">
+				@@include('blocks/sidebar.html')
+				@@include('blocks/content.html')
+			</div>
+		</main>
+		<!-- Main -->
+	
+		<!-- Footer -->
+			@@include('blocks/footer.html')
+		<!-- Footer -->
+	</div>
+
+	<script src="./js/main.bundle.js"></script>
+</body>
+
+</html>
