@@ -4,7 +4,11 @@ html {
 	scroll-behavior: smooth;
 	background-color: rgb(39, 39, 39);
 	// font-size: 30px;
-	@include adaptiv-font(30, 10)
+	@include adaptiv-font(30, 10);
+	@include mobile {
+		font-size: 35px;
+		// @include adaptiv-font(30, 16);
+	}
 }
 
 body {
@@ -13,6 +17,9 @@ body {
 	font-family: var(--font-main);
 	// text-wrap: balance;
 	font-size: rem(8);
+	@include mobile {
+		font-size: rem(7);	
+	}
 }
 
 img {
