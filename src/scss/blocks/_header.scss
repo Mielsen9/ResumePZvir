@@ -1,5 +1,6 @@
 .header {
-
+	position: relative;
+	z-index: 4;
 	
 	&__conteiner {
 		background-color: var(--main-color);

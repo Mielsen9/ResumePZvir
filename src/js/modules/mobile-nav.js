@@ -3,11 +3,13 @@ function mobileNav() {
 	const navBtn = document.querySelector('.mobile-nav-btn');
 	const nav = document.querySelector('.mobile-nav');
 	const menuIcon = document.querySelector('.nav-icon');
+	const content = document.querySelector('.content');
 
 	navBtn.onclick = function () {
 		nav.classList.toggle('mobile-nav--open');
 		menuIcon.classList.toggle('nav-icon--active');
-		document.body.classList.toggle('no-scroll');
+		content.classList.toggle('content--close');
+		// document.body.classList.toggle('no-scroll');
 	};
 }
 

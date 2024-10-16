@@ -39,6 +39,12 @@
       margin-left: rem(10);
 	}
 }
+
+.soft-skills {
+   @include mobile {
+       display: none;
+   }
+}
 .languages {
    font-size: rem(8);
   padding-bottom: rem(20);

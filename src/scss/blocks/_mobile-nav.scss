@@ -1,0 +1,22 @@
+.mobile-nav {
+	@include mobile {
+		position: relative;
+		height: 70%;
+		display: none;
+		
+		right: -100%;
+		z-index: 3;	
+		overflow: auto;
+		transition: right 30.2s ease-in;
+	}
+}
+
+.mobile-nav--open {
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.content--close {
+	display: none;
+}

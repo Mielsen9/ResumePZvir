@@ -2,6 +2,9 @@
   padding: 0 rem(15);
 	// width: rem(290);
 	border-right: 1px solid var(--main-color);
+	@include mobile {
+			padding-top: rem(50);
+	}
 }
 .profile, .work-experience, .education {
 	border-left: 1px solid #000;
