@@ -10,37 +10,42 @@
 
 .contact {
 
-		&__item {
-      padding: rem(6) 0;
+   &__list {
       display: flex;
+      flex-direction: column;
+   }
+	&__item {
+      width: rem(100);
+      padding: rem(6) 0;
+      display: inline-flex;
       align-items: center;
       column-gap: rem(5);
-		}
+	}
 
-		&__item-img {
+	&__item-img {
       width: rem(10);
       height: rem(10);
-		}
+	}
 }
 
 .skills {
 
-		&__item {
+	&__item {
       list-style-type: disc;
       padding-top: rem(6);
       margin-left: rem(10);
-		}
+	}
 }
 .languages {
 
   padding-bottom: rem(20);
-		&__list {
-      padding-top: rem(6);
-		}
+	&__list {
+   padding-top: rem(6);
+	}
 
-		&__item {
-      list-style-type: disc;
-      padding-top: rem(3);
-      margin-left: rem(10);
-		}
+	&__item {
+   list-style-type: disc;
+   padding-top: rem(3);
+   margin-left: rem(10);
+	}
 }
