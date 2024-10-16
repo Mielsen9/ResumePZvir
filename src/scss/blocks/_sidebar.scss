@@ -1,25 +1,25 @@
 .sidebar {
 
   background-color: var(--sidebar-color);
-  padding-top: 45px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 130px;
+  padding-top: rem(45);
+  padding-left: rem(15);
+  padding-right: rem(15);
+  width: rem(585);
   border-left: 1px solid var(--main-color);
 }
 
 .contact {
 
 		&__item {
-      padding: 6px 0;
+      padding: rem(6) 0;
       display: flex;
       align-items: center;
-      column-gap: 5px;
+      column-gap: rem(5);
 		}
 
 		&__item-img {
-      width: 10px;
-      height: 10px;
+      width: rem(10);
+      height: rem(10);
 		}
 }
 
@@ -27,20 +27,20 @@
 
 		&__item {
       list-style-type: disc;
-      padding-top: 6px;
-      margin-left: 10px;
+      padding-top: rem(6);
+      margin-left: rem(10);
 		}
 }
 .languages {
 
-  padding-bottom: 20px;
+  padding-bottom: rem(20);
 		&__list {
-      padding-top: 6px;
+      padding-top: rem(6);
 		}
 
 		&__item {
       list-style-type: disc;
-      padding-top: 3px;
-      margin-left: 10px;
+      padding-top: rem(3);
+      margin-left: rem(10);
 		}
 }

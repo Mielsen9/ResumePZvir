@@ -6,8 +6,7 @@
 
 // REM
 @function rem($px) {
-  $result: math.div($px, 16) + rem;
-  @return $result; 
+  @return calc(#{$px} / 16 * 1rem);
 }
 
 // wiaport

@@ -69,7 +69,7 @@ gulp.task('sass:dev', function () {
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./build/css/'))
-		// .pipe(plumber(plumberNotify('SCSS')))
+		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
 		.pipe(sassGlob())
 		.pipe(sass())

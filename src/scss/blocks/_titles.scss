@@ -1,24 +1,24 @@
 .title {
-  font-size: 16px;
+  font-size: rem(16);
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
 }
 .title-2 {
-  font-size: 8px;
+  font-size: rem(8);
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 20px;
-  padding-bottom: 5px;
+  margin-top: rem(20);
+  padding-bottom: rem(5);
   border-bottom: 1px solid #000;
 }
 .title-3 {
-  font-size: 8px;
+  font-size: rem(8);
   font-weight: bold;
-  padding: 5px 0;
+  padding: rem(5) 0;
 }
 .title-4 {
-  font-size: 7px;
+  font-size: rem(7);
   font-weight: bold;
-  padding-top: 2px;
+  padding-top: rem(2);
 }

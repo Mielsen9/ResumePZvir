@@ -1,11 +1,11 @@
 :root {
-	--container-width: 430px;
+	// --container-width: calc(430 / 16 * 1rem);
 	--container-padding: 5px;
 
 	--font-main: Roboto, sans-serif;
 	--font-accent: sans-serif;
 	--font-titles: var(--font-accent);
-	--font-size: 8px;
+	// --font-size: calc(8 / 16 * 1rem);
 
 	--page-bg: #fff;
 	--text-color: #000;
@@ -22,8 +22,8 @@
 }
 // Maket
 $maxWidth: 1920;
-$maxWidthContainer: 440;  
-$minWidth: 390;
+$maxWidthContainer: 820;  
+$minWidth: 280;
 
 .dark {
     --page-bg: #252526;

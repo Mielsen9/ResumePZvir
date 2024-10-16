@@ -3,6 +3,8 @@
 html {
 	scroll-behavior: smooth;
 	background-color: rgb(39, 39, 39);
+	// font-size: 30px;
+	@include adaptiv-font(30, 10)
 }
 
 body {
@@ -10,7 +12,7 @@ body {
 	color: var(--text-color);
 	font-family: var(--font-main);
 	// text-wrap: balance;
-	font-size: var(--font-size);
+	font-size: rem(8);
 }
 
 img {
