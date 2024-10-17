@@ -44,5 +44,9 @@
 		@include mobile {
 			bottom: rem(-120);
 		}
+		& img {
+			height: rem(100);
+			width: rem(100);
+		}
 		}
 }
