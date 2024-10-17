@@ -45,8 +45,9 @@
 			bottom: rem(-120);
 		}
 		& img {
-			height: rem(100);
-			width: rem(100);
+			width: 100%; /* Ширина зображення 100% від контейнера */
+			height: auto; /* Висота автоматично підлаштовується */
+			object-fit: cover; 
 		}
 		}
 }
