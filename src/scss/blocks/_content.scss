@@ -33,6 +33,14 @@
 		margin-top: rem(2);
 		padding-bottom: rem(2);
 	}
+	&__text li {
+		list-style-type: disc;
+		padding-top: rem(3);
+		margin-left: rem(10);
+	}
+	&__text li span {
+		font-weight: 500;
+	}
 }
 .data {
 	font-style: italic;
@@ -48,8 +56,8 @@
 
 		&__item {
 			list-style-type: disc;
-      padding-top: rem(4);
-      margin-left: rem(10);
+			  padding-top: rem(4);
+			  margin-left: rem(10);
 		}
 
 		&__title-3 {
@@ -67,7 +75,16 @@
 
 		&__progect-link {
 			font-size: rem(7);
-  		font-weight: 600;
+  			font-weight: 600;
+		}
+		&__job {
+			font-weight: 500;
+		}
+		&__conteiner-job {
+			display: flex;
+		}
+		&__conteiner-job span{
+			padding: 0 rem(5);
 		}
 }
 
