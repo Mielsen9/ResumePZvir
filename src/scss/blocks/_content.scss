@@ -1,5 +1,5 @@
 .content {
-  padding: 0 rem(15);
+  padding: rem(10) rem(15);
 	// width: rem(290);
 	border-right: 1px solid var(--main-color);
 	@include mobile {
@@ -9,6 +9,7 @@
 .profile, .work-experience, .education {
 	border-left: 1px solid #000;
 	padding-left: rem(20);
+	margin:  rem(20) 0;
 	position: relative;
 	&::before {
 		content: "";
